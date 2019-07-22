@@ -54,12 +54,12 @@ You can invoke your server using the following command:
 The response should be the index.html file. The first time you make a request 
 it will look like this:  
 ```BASH
-cs361> curl localhost:4000  
+shell> curl localhost:4000  
 <text of the index.html file>
 ```
 The 1,000th time you call the server it will look like this:  
 ```BASH
-cs361> curl localhost:4000  
+shell> curl localhost:4000  
 <text of the index.html file>
 ```
 
@@ -67,7 +67,7 @@ But wait, there's more... Curl will not be happy if you don't have a properly fo
 Reference Bryan and O'Hallaron 11.5.3 to learn how to do this. 
 
 To test your server you can run the following:  
-`cs361>for((i=0; i<100; i+=1)) do curl localhost:4000 & done`  
+`shell>for((i=0; i<100; i+=1)) do curl localhost:4000 & done`  
 Your log file should list numbers from 1 to 100 in order. 
 
 ## An Introduction to Concurrency
